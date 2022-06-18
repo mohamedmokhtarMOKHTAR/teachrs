@@ -3,7 +3,7 @@ import TestiMonialsDetails from '../TestiMonialsDetails/TestiMonialsDetails'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
-import userPic from '../../image/user-one.png';
+
 import './TestiMonials.css'
 import { Card, CardBody, CardTitle, CardText, Form, FormGroup, Label, Input, CustomInput, Button } from 'reactstrap'
 import Carousel from 'carousel-react-rcdev'
@@ -14,161 +14,183 @@ const TestiMonials = () => {
 
     const [testiMonials, setTestiMonials] = useState([
         {
-            name: 'Rekob Ramya',
-            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
-            address: 'USA',
+            name: 'Mohamed Mokhtar',
+            description: 'Le rôle du professeur est de transmettre des connaissances à des élèves de collège ou de lycée.',
+            address: 'Paris',
             matiere : 'math',
-            img: 'https://i.ibb.co/hgGJc8d/Gareth-Bale.jpg'
+            star : '⭐⭐⭐⭐',
+            img: 'https://static.vecteezy.com/ti/vecteur-libre/p3/2275847-male-avatar-profil-icone-de-souriant-caucasien-homme-vectoriel.jpg'
         },
         {
-            name: 'Brandon Savage',
-            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
-            address: 'USA',
+            name: 'Prof',
+            description: 'Le rôle du professeur est de transmettre des connaissances à des élèves de collège ou de lycée.',
+            address: 'Paris',
             matiere : 'SVT',
-            img: 'https://i.ibb.co/z7Kp6yr/np-file-33188.jpg'
+            star : '⭐⭐⭐',
+            img: 'https://c.pxhere.com/images/0f/3f/4dbc54d34a6b984a6c5f283be804-1447673.jpg!d'
         },
         {
-            name: 'Steve Burns',
-            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
-            address: 'USA',
+            name: 'Prof 0',
+            description: 'Le rôle du professeur est de transmettre des connaissances à des élèves de collège ou de lycée.',
+            address: 'Paris',
             matiere : 'anglais',
-            img: 'https://i.ibb.co/CP5sj7g/2856040-58866808-2560-1440.jpg'
+            star : '⭐⭐⭐⭐',
+            img: 'https://thumbs.dreamstime.com/z/profil-d-avatar-de-jeune-et-%C3%A9l%C3%A9gante-femme-81932537.jpg'
         },
         {
-            name: 'Kevin Canlas',
-            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
-            address: 'USA',
+            name: 'Prof 1',
+            description: 'Le rôle du professeur est de transmettre des connaissances à des élèves de collège ou de lycée.',
+            address: 'Paris',
             matiere : 'music',
-            img: 'https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg'
+            star : '⭐⭐⭐⭐',
+            img: 'https://img.freepik.com/vecteurs-libre/profil-avatar-femme-icone-ronde_24640-14042.jpg?w=740'
         },
         {
-            name: 'Kevin Canlas',
-            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
-            address: 'USA',
+            name: 'Prof 2',
+            description: 'Le rôle du professeur est de transmettre des connaissances à des élèves de collège ou de lycée.',
+            address: 'Paris',
             matiere : 'music',
-            img: 'https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg'
+            star : '⭐⭐⭐⭐',
+            img: 'https://img.freepik.com/vecteurs-libre/homme-affaires-africain-montre-sa-carte-identite-badge-tag_61103-840.jpg?w=740'
         },
         {
-            name: 'Kevin Canlas',
-            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
-            address: 'USA',
+            name: 'Prof 3',
+            description: 'Le rôle du professeur est de transmettre des connaissances à des élèves de collège ou de lycée.',
+            address: 'Paris',
             matiere : 'music',
-            img: 'https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg'
+            star : '⭐⭐⭐⭐',
+            img: 'https://images.vexels.com/media/users/3/145908/raw/52eabf633ca6414e60a7677b0b917d92-male-avatar-maker.jpg'
         },
         {
-            name: 'Kevin Canlas',
-            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
-            address: 'USA',
+            name: 'Prof 4',
+            description: 'Le rôle du professeur est de transmettre des connaissances à des élèves de collège ou de lycée.',
+            address: 'Paris',
             matiere : 'music',
-            img: 'https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg'
+            star : '⭐⭐⭐⭐',
+            img: 'https://thumbs.dreamstime.com/z/vecteur-d-avatar-de-caract%C3%A8re-d-homme-dans-la-conception-plate-78072416.jpg'
         },
         {
-            name: 'Kevin Canlas',
-            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
-            address: 'USA',
+            name: 'Prof 5',
+            description: 'Le rôle du professeur est de transmettre des connaissances à des élèves de collège ou de lycée.',
+            address: 'Paris',
             matiere : 'music',
-            img: 'https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg'
+            star : '⭐⭐⭐⭐',
+            img: 'https://previews.123rf.com/images/yupiramos/yupiramos1607/yupiramos160702547/59266486-jeune-profil-femme-avatar-isol%C3%A9-sur-fond-blanc-illustration-vectorielle-.jpg'
         },
         {
-            name: 'Kevin Canlas',
-            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
-            address: 'USA',
+            name: 'Prof 6',
+            description: 'Le rôle du professeur est de transmettre des connaissances à des élèves de collège ou de lycée.',
+            address: 'Paris',
             matiere : 'music',
-            img: 'https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg'
+            star : '⭐⭐⭐⭐',
+            img: 'https://atozimmodrc.com/wp-content/uploads/2015/06/42584408-personnage-de-hipster-plat-elegant-jeune-mec-avec-des-lunettes-icone-d-avatar-illustration-vectorielle.jpg'
         },
         {
-            name: 'Kevin Canlas',
-            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
-            address: 'USA',
+            name: 'Prof 7',
+            description: 'Le rôle du professeur est de transmettre des connaissances à des élèves de collège ou de lycée.',
+            address: 'Paris',
             matiere : 'music',
-            img: 'https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg'
+            star : '⭐⭐⭐⭐',
+            img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRB-r-33_9ZqU1sAITY2wlJNXYt-qkzsLszA&usqp=CAU'
         },
         {
-            name: 'Kevin Canlas',
-            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
-            address: 'USA',
+            name: 'Prof 8',
+            description: 'Le rôle du professeur est de transmettre des connaissances à des élèves de collège ou de lycée.',
+            address: 'Paris',
             matiere : 'music',
-            img: 'https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg'
+            star : '⭐⭐⭐⭐',
+            img: 'https://thumbs.dreamstime.com/b/vecteur-d-ic%C3%B4ne-homme-affaires-image-masculine-de-profil-avatar-m%C3%A2le-182095609.jpg'
         },
     ]);
     const [backTestiMonials, setBackTestiMonials] = useState([
         {
-            name: 'Rekob Ramya',
-            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
-            address: 'USA',
+            name: 'Mohamed Mokhtar',
+            description: 'Le rôle du professeur est de transmettre des connaissances à des élèves de collège ou de lycée.',
+            address: 'Paris',
             matiere : 'math',
-            img: 'https://i.ibb.co/hgGJc8d/Gareth-Bale.jpg'
-        },
-        {
-            name: 'Brandon Savage',
-            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
-            address: 'USA',
-            matiere : 'SVT',
-            img: 'https://i.ibb.co/z7Kp6yr/np-file-33188.jpg'
-        },
-        {
-            name: 'Steve Burns',
-            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
-            address: 'USA',
-            matiere : 'anglais',
-            img: 'https://i.ibb.co/CP5sj7g/2856040-58866808-2560-1440.jpg'
-        },
-        {
-            name: 'Kevin Canlas',
-            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
-            address: 'USA',
-            matiere : 'music',
-            img: 'https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg'
-        },
-        {
-            name: 'Kevin Canlas',
-            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
-            address: 'USA',
-            matiere : 'music',
-            img: 'https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg'
-        },
-        {
-            name: 'Kevin Canlas',
-            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
-            address: 'USA',
-            matiere : 'music',
-            img: 'https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg'
-        },
-        {
-            name: 'Kevin Canlas',
-            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
-            address: 'USA',
-            matiere : 'music',
-            img: 'https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg'
-        },
-        {
-            name: 'Kevin Canlas',
-            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
-            address: 'USA',
-            matiere : 'music',
-            img: 'https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg'
-        },
-        {
-            name: 'Kevin Canlas',
-            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
-            address: 'USA',
-            matiere : 'music',
-            img: 'https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg'
-        },
-        {
-            name: 'Kevin Canlas',
-            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
-            address: 'USA',
-            matiere : 'music',
-            img: 'https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg'
-        },
-        {
-            name: 'Kevin Canlas',
-            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
-            address: 'USA',
-            matiere : 'music',
-            img: 'https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg'
-        },
+            star : '⭐⭐⭐⭐',
+            img: 'https://static.vecteezy.com/ti/vecteur-libre/p3/2275847-male-avatar-profil-icone-de-souriant-caucasien-homme-vectoriel.jpg'
+    },
+    {
+        name: 'Prof',
+        description: 'Le rôle du professeur est de transmettre des connaissances à des élèves de collège ou de lycée.',
+        address: 'Paris',
+        matiere : 'SVT',
+        star : '⭐⭐⭐',
+        img: 'https://c.pxhere.com/images/0f/3f/4dbc54d34a6b984a6c5f283be804-1447673.jpg!d'
+    },
+    {
+        name: 'Prof 0',
+        description: 'Le rôle du professeur est de transmettre des connaissances à des élèves de collège ou de lycée.',
+        address: 'Paris',
+        matiere : 'anglais',
+        star : '⭐⭐⭐⭐',
+        img: 'https://thumbs.dreamstime.com/z/profil-d-avatar-de-jeune-et-%C3%A9l%C3%A9gante-femme-81932537.jpg'
+    },
+    {
+        name: 'Prof 1',
+        description: 'Le rôle du professeur est de transmettre des connaissances à des élèves de collège ou de lycée.',
+        address: 'Paris',
+        matiere : 'music',
+        star : '⭐⭐⭐⭐',
+        img: 'https://img.freepik.com/vecteurs-libre/profil-avatar-femme-icone-ronde_24640-14042.jpg?w=740'
+    },
+    {
+        name: 'Prof 2',
+        description: 'Le rôle du professeur est de transmettre des connaissances à des élèves de collège ou de lycée.',
+        address: 'Paris',
+        matiere : 'music',
+        star : '⭐⭐⭐⭐',
+        img: 'https://img.freepik.com/vecteurs-libre/homme-affaires-africain-montre-sa-carte-identite-badge-tag_61103-840.jpg?w=740'
+    },
+    {
+        name: 'Prof 3',
+        description: 'Le rôle du professeur est de transmettre des connaissances à des élèves de collège ou de lycée.',
+        address: 'Paris',
+        matiere : 'music',
+        star : '⭐⭐⭐⭐',
+        img: 'https://img.freepik.com/vecteurs-libre/jeune-homme-avatar-caractere-vector-illustration-design_24877-18550.jpg'
+    },
+    {
+        name: 'Prof 4',
+        description: 'Le rôle du professeur est de transmettre des connaissances à des élèves de collège ou de lycée.',
+        address: 'Paris',
+        matiere : 'music',
+        star : '⭐⭐⭐⭐',
+        img: 'https://thumbs.dreamstime.com/z/vecteur-d-avatar-de-caract%C3%A8re-d-homme-dans-la-conception-plate-78072416.jpg'
+    },
+    {
+        name: 'Prof 5',
+        description: 'Le rôle du professeur est de transmettre des connaissances à des élèves de collège ou de lycée.',
+        address: 'Paris',
+        matiere : 'music',
+        star : '⭐⭐⭐⭐',
+        img: 'https://previews.123rf.com/images/yupiramos/yupiramos1607/yupiramos160702547/59266486-jeune-profil-femme-avatar-isol%C3%A9-sur-fond-blanc-illustration-vectorielle-.jpg'
+    },
+    {
+        name: 'Prof 6',
+        description: 'Le rôle du professeur est de transmettre des connaissances à des élèves de collège ou de lycée.',
+        address: 'Paris',
+        matiere : 'music',
+        star : '⭐⭐⭐⭐',
+        img: 'https://img.freepik.com/vecteurs-libre/jeune-homme-avatar-caractere-vector-illustration-design_24877-18514.jpg'
+    },
+    {
+        name: 'Prof 7',
+        description: 'Le rôle du professeur est de transmettre des connaissances à des élèves de collège ou de lycée.',
+        address: 'Paris',
+        matiere : 'music',
+        star : '⭐⭐⭐⭐',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRB-r-33_9ZqU1sAITY2wlJNXYt-qkzsLszA&usqp=CAU'
+    },
+    {
+        name: 'Prof 8',
+        description: 'Le rôle du professeur est de transmettre des connaissances à des élèves de collège ou de lycée.',
+        address: 'Paris',
+        matiere : 'music',
+        star : '⭐⭐⭐⭐',
+        img: 'https://thumbs.dreamstime.com/b/vecteur-d-ic%C3%B4ne-homme-affaires-image-masculine-de-profil-avatar-m%C3%A2le-182095609.jpg'
+    },
     ]);
     const [subject, setSubject] = useState("")
     const search = (e) => {
@@ -231,20 +253,20 @@ const TestiMonials = () => {
     return (
         <section id="testimonial" className="testimonials pt-70 pb-70">
             <div className="container mt-5">
-                <h4 className="miniTitle text-center">recherche par matiere </h4>
+                <h1 className="miniTitle text-center">Recherche par matiere </h1>
                 <div class="input-group">
-                <Input className='form-input' name={subject} type='email' id='login-email' placeholder='Courriel' value={subject} onChange={(e) => search(e)} />
+                <Input className='form-input' name={subject} type='email' id='login-email' placeholder='math , SVT , music ...' value={subject} onChange={(e) => search(e)} />
                 <button type="button" class="btn btn-outline-primary">search</button>
                 </div>
-                <p className="text-center ">les teach'rs {subject} qui pourraient vous correspondre</p>
+                <h3 className="text-center ">les teach'rs {subject} qui pourraient vous correspondre</h3>
                 <div className="row">
                     <div className="col-md-12">
                     <Carousel>
                             {
                                 testiMonials.length === 0 ?
-                                    <div class="item">
+                                  <center>   <div class="item">
                                         pas de resultats
-                                    </div> :
+                                    </div> </center> :
                                     testiMonials.map(testiMonialDetail => {
                                         return (
                                             <>
