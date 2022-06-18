@@ -253,12 +253,11 @@ const TestiMonials = () => {
     return (
         <section id="testimonial" className="testimonials pt-70 pb-70">
             <div className="container mt-5">
-                <h1 className="miniTitle text-center">Recherche par matiere </h1>
+                <h1 className="miniTitle text-center" style={{color:"#2E86C1"}}>En quelle matiére avez-vous besoin de d'aide ? </h1>
                 <div class="input-group">
                 <Input className='form-input' name={subject} type='email' id='login-email' placeholder='math , SVT , music ...' value={subject} onChange={(e) => search(e)} />
-                <button type="button" class="btn btn-outline-primary">search</button>
                 </div>
-                <h3 className="text-center ">les teach'rs {subject} qui pourraient vous correspondre</h3>
+                <h3 className="text-center " style={{color:"#2E86C1"}}>les teach'rs {subject} qui pourraient vous correspondre</h3>
                 <div className="row">
                     <div className="col-md-12">
                     <Carousel>
