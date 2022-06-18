@@ -29,7 +29,8 @@ function App() {
         position="fixed"
         sx={{ width: `calc(100% - ${drawerWidth}px)`, ml: `${drawerWidth}px` }}
       >
-        <Toolbar>
+        <Toolbar style={{backgroundColor:"#ffff"}} >
+
           <Typography variant="h6" noWrap component="div">
           </Typography>
         </Toolbar>
@@ -47,10 +48,9 @@ function App() {
         variant="permanent"
         anchor="left"
       >
-        <Toolbar />
-
+          <img src="https://static.data.gouv.fr/avatars/4e/84c636dac740c3a10c8fe7df39f482.png" alt="Logo" width="200px" height="200px" />
         <List>
-          {['❶ Votre demande ', '② Nos propositions ', '③ Paiement '].map((text, index) => (
+            {['❶ Votre demande ', '② Nos propositions ', '③ Paiement '].map((text, index) => (
             <ListItem key={text} disablePadding>
               <ListItemButton>
                 <ListItemIcon>

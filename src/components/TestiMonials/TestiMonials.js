@@ -264,7 +264,7 @@ const TestiMonials = () => {
                     <Carousel>
                             {
                                 testiMonials.length === 0 ?
-                                  <center>   <div class="item">
+                                  <center>   <div class="item"  >
                                         pas de resultats
                                     </div> </center> :
                                     testiMonials.map(testiMonialDetail => {
