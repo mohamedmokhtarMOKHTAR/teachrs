@@ -24,7 +24,7 @@ const drawerWidth = 240;
 function App() {
   
   return (
-    <Box sx={{ display: 'flex' }} >
+    <Box sx={{ display: 'flex'}} >
       <CssBaseline />
       <AppBar
         position="fixed"
@@ -47,7 +47,7 @@ function App() {
       >
 
           <img src="https://static.data.gouv.fr/avatars/4e/84c636dac740c3a10c8fe7df39f482.png" alt="Logo" width="200px" height="200px" />
-        <List >
+        <List  style={{color:"black" , fontWeight:"bold" , fontFamily:"Verdana" }} >
             {['❶ Votre demande ', '② Nos propositions ', '③ Paiement '].map((text, index) => (
             <ListItem key={text} disablePadding>
               <ListItemButton>

@@ -251,9 +251,9 @@ const TestiMonials = () => {
         }
       };
     return (
-        <section id="testimonial" className="testimonials pt-70 pb-70">
+        <section id="testimonial" className="testimonials pt-70 pb-70" >
             <div className="container mt-5">
-                <h1 className="miniTitle text-center" style={{color:"#2E86C1" ,  fontWeight: 'bold' , fontFamily:"Verdana"}}>En quelle matiére avez-vous besoin de d'aide ? </h1>
+                <h1 className="miniTitle text-center" style={{color:"#2E86C1" ,  fontWeight: 'bold' , fontFamily:"Verdana" }}>En quelle matiére avez-vous besoin de d'aide ? </h1>
                 <div class="input-group">
                 <Input className='form-input' name={subject} type='email' id='login-email' placeholder='math , SVT , music ...' value={subject} onChange={(e) => search(e)} />
                 </div>
