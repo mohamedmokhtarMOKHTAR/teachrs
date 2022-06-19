@@ -20,7 +20,7 @@ import AlertTitle from '@mui/material/AlertTitle'
 import IconButton from '@mui/material/IconButton'
 import CardContent from '@mui/material/CardContent'
 import FormControl from '@mui/material/FormControl'
-
+import validator from 'validator'
 
 
 
@@ -52,13 +52,24 @@ const ResetButtonStyled = styled(Button)(({ theme }) => ({
 const Formulaire = () => {
     // ** State
     const [openAlert, setOpenAlert] = useState(true)
-    const [imgSrc, setImgSrc] = useState('/images/avatars/1.png')
+    const [imgSrc, setImgSrc] = useState('https://oasys.ch/wp-content/uploads/2019/03/photo-avatar-profil.png')
     const [values, setValues] = useState({
         newPassword: '',
         showNewPassword: false,
         confirmNewPassword: '',
         showConfirmNewPassword: false
     })
+
+    const [emailError, setEmailError] = useState('')
+    const validateEmail = (e) => {
+        var email = e.target.value
+
+        if (validator.isEmail(email)) {
+            setEmailError('Valid Email :)')
+        } else {
+            setEmailError('Enter valid Email!')
+        }
+    }
 
     const onChange = file => {
         const reader = new FileReader()
@@ -75,6 +86,11 @@ const Formulaire = () => {
     return (
 
         <CardContent>
+           <h1 style={{color:"#2E86C1" , fontWeight:"bold" , fontFamily:"Verdana"}}>Presque fini !</h1>
+            <h5 style={{color:"#AAB7B8" , fontFamily:"Verdana"}}>Une fois que des Teach'rs auront répondu a votre annonce, vous
+                aurez besoin d'un compte pour y répondre. Prenons de l'avance !</h5>
+            <br/>
+            <br/>
             <form>
                 <Grid container spacing={7}>
                     <Grid item xs={12} sx={{ marginTop: 4.8, marginBottom: 3 }}>
@@ -91,7 +107,7 @@ const Formulaire = () => {
                                         id='account-settings-upload-image'
                                     />
                                 </ButtonStyled>
-                                <ResetButtonStyled color='error' variant='outlined' onClick={() => setImgSrc('/images/avatars/1.png')}>
+                                <ResetButtonStyled color='error' variant='outlined' onClick={() => setImgSrc('https://oasys.ch/wp-content/uploads/2019/03/photo-avatar-profil.png')}>
                                     Reset
                                 </ResetButtonStyled>
                                 <Typography variant='body2' sx={{ marginTop: 5 }}>
@@ -108,16 +124,29 @@ const Formulaire = () => {
                     <Grid item xs={12} sm={6}>
                         <TextField fullWidth label='Prénom' placeholder='Mohamed' />
                     </Grid>
+
+           <Grid item xs={12} sm={6}>
+            <TextField
+                fullWidth
+                type='email'
+                label='Email'
+                placeholder='example@example.com'
+                onChange={(e) => validateEmail(e)} />
+
+
+        <span style={{
+            fontWeight: 'bold',
+            color: 'red',
+        }}>{emailError}</span>
+       </Grid>
                     <Grid item xs={12} sm={6}>
-                        <TextField
-                            fullWidth
-                            type='email'
-                            label='Email'
-                            placeholder='example@example.com'
-                        />
+                        <TextField fullWidth type='number' label='Téléphone portable' placeholder='+33 6 XX XX XX XX ' />
                     </Grid>
                     <Grid item xs={12} sm={6}>
-                        <TextField fullWidth type='number' label='Téléphone portable' placeholder='+33 6 12 34 56 78 ' />
+                        <TextField fullWidth type='password' label='Mot de passe' placeholder='••••••••••••'  />
+                    </Grid>
+                    <Grid item xs={12} sm={6}>
+                        <TextField fullWidth type='password' label='Confirmer votre mot de passe' placeholder='••••••••••••' />
                     </Grid>
 
 
