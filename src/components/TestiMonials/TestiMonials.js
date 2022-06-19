@@ -49,7 +49,7 @@ const TestiMonials = () => {
             name: 'Prof 2',
             description: 'Le rôle du professeur est de transmettre des connaissances à des élèves de collège ou de lycée.',
             address: 'Paris',
-            matiere : 'music',
+            matiere : 'SVT',
             star : '⭐⭐⭐⭐',
             img: 'https://img.freepik.com/vecteurs-libre/homme-affaires-africain-montre-sa-carte-identite-badge-tag_61103-840.jpg?w=740'
         },
@@ -57,7 +57,7 @@ const TestiMonials = () => {
             name: 'Prof 3',
             description: 'Le rôle du professeur est de transmettre des connaissances à des élèves de collège ou de lycée.',
             address: 'Paris',
-            matiere : 'music',
+            matiere : 'SVT',
             star : '⭐⭐⭐⭐',
             img: 'https://images.vexels.com/media/users/3/145908/raw/52eabf633ca6414e60a7677b0b917d92-male-avatar-maker.jpg'
         },
@@ -89,7 +89,7 @@ const TestiMonials = () => {
             name: 'Prof 7',
             description: 'Le rôle du professeur est de transmettre des connaissances à des élèves de collège ou de lycée.',
             address: 'Paris',
-            matiere : 'music',
+            matiere : 'math',
             star : '⭐⭐⭐⭐',
             img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRB-r-33_9ZqU1sAITY2wlJNXYt-qkzsLszA&usqp=CAU'
         },
@@ -97,7 +97,7 @@ const TestiMonials = () => {
             name: 'Prof 8',
             description: 'Le rôle du professeur est de transmettre des connaissances à des élèves de collège ou de lycée.',
             address: 'Paris',
-            matiere : 'music',
+            matiere : 'math',
             star : '⭐⭐⭐⭐',
             img: 'https://thumbs.dreamstime.com/b/vecteur-d-ic%C3%B4ne-homme-affaires-image-masculine-de-profil-avatar-m%C3%A2le-182095609.jpg'
         },
@@ -139,7 +139,7 @@ const TestiMonials = () => {
         name: 'Prof 2',
         description: 'Le rôle du professeur est de transmettre des connaissances à des élèves de collège ou de lycée.',
         address: 'Paris',
-        matiere : 'music',
+        matiere : 'SVT',
         star : '⭐⭐⭐⭐',
         img: 'https://img.freepik.com/vecteurs-libre/homme-affaires-africain-montre-sa-carte-identite-badge-tag_61103-840.jpg?w=740'
     },
@@ -147,7 +147,7 @@ const TestiMonials = () => {
         name: 'Prof 3',
         description: 'Le rôle du professeur est de transmettre des connaissances à des élèves de collège ou de lycée.',
         address: 'Paris',
-        matiere : 'music',
+        matiere : 'SVT',
         star : '⭐⭐⭐⭐',
         img: 'https://img.freepik.com/vecteurs-libre/jeune-homme-avatar-caractere-vector-illustration-design_24877-18550.jpg'
     },
@@ -179,7 +179,7 @@ const TestiMonials = () => {
         name: 'Prof 7',
         description: 'Le rôle du professeur est de transmettre des connaissances à des élèves de collège ou de lycée.',
         address: 'Paris',
-        matiere : 'music',
+        matiere : 'math',
         star : '⭐⭐⭐⭐',
         img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRB-r-33_9ZqU1sAITY2wlJNXYt-qkzsLszA&usqp=CAU'
     },
@@ -187,7 +187,7 @@ const TestiMonials = () => {
         name: 'Prof 8',
         description: 'Le rôle du professeur est de transmettre des connaissances à des élèves de collège ou de lycée.',
         address: 'Paris',
-        matiere : 'music',
+        matiere : 'math',
         star : '⭐⭐⭐⭐',
         img: 'https://thumbs.dreamstime.com/b/vecteur-d-ic%C3%B4ne-homme-affaires-image-masculine-de-profil-avatar-m%C3%A2le-182095609.jpg'
     },
@@ -257,7 +257,7 @@ const TestiMonials = () => {
                 <div class="input-group">
                 <Input className='form-input' name={subject} type='email' id='login-email' placeholder='math , SVT , music ...' value={subject} onChange={(e) => search(e)} />
                 </div>
-                <h3 className="text-center " style={{color:"#2E86C1"}}>les teach'rs {subject} qui pourraient vous correspondre</h3>
+                <h3 className="text-center " style={{color:"#2E86C1"}}>Les teach'rs {subject} qui pourraient vous correspondre</h3>
                 <div className="row">
                     <div className="col-md-12">
                     <Carousel>
@@ -282,6 +282,7 @@ const TestiMonials = () => {
             </div>
         </section>
     );
+
 };
 
 export default TestiMonials;

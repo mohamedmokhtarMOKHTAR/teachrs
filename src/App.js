@@ -1,6 +1,7 @@
 
 import './App.css';
 import TestiMonials from './components/TestiMonials/TestiMonials';
+import Formulaire from './components/formulaire/Formulaire';
 
 
 import Box from '@mui/material/Box';
@@ -23,17 +24,13 @@ const drawerWidth = 240;
 function App() {
   
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: 'flex' }} >
       <CssBaseline />
       <AppBar
         position="fixed"
-        sx={{ width: `calc(100% - ${drawerWidth}px)`, ml: `${drawerWidth}px` }}
+        sx={{ width: `calc(100% - ${drawerWidth}px)`, ml: `${drawerWidth}px`  }}
       >
-        <Toolbar style={{backgroundColor:"#ffff"}} >
 
-          <Typography variant="h6" noWrap component="div">
-          </Typography>
-        </Toolbar>
       </AppBar>
       <Drawer
 
@@ -43,13 +40,14 @@ function App() {
           '& .MuiDrawer-paper': {
             width: drawerWidth,
             boxSizing: 'border-box',
-          },
+          }
         }}
         variant="permanent"
         anchor="left"
       >
+
           <img src="https://static.data.gouv.fr/avatars/4e/84c636dac740c3a10c8fe7df39f482.png" alt="Logo" width="200px" height="200px" />
-        <List>
+        <List >
             {['❶ Votre demande ', '② Nos propositions ', '③ Paiement '].map((text, index) => (
             <ListItem key={text} disablePadding>
               <ListItemButton>
@@ -59,20 +57,26 @@ function App() {
               </ListItemButton>
             </ListItem>
           ))}
+
         </List>
 
 
+
       </Drawer>
+
       <Box
         component="main"
         sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }}
       >
         <Toolbar />
         <TestiMonials >
-         
         </TestiMonials>
-        
+
+          <Formulaire >
+          </Formulaire>
+
       </Box>
+
     </Box>
   );
 }
